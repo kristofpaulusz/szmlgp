@@ -1,0 +1,44 @@
+main {
+    max-width: 200px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+article {
+    display: grid;
+    grid-template-areas:
+        "kij kij"
+        "szam muv";
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+}
+.kijelzo {
+    grid-area: kij;
+    border: 1px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+.szamok {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+.szamok button {
+    width: 30px;
+}
+.muvjelek {
+    grid-area: muv;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.muvjelek button {
+  
+    width: 30px;
+}
